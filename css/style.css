@@ -766,3 +766,19 @@ p {
   max-width: 100% !important;
   height: auto !important;
 }
+
+.sp-mockup {
+  width: 220px !important;
+  max-width: 220px !important;
+  margin: 0 auto !important;
+  flex: 0 0 220px !important;
+}
+
+.sp-mockup img {
+  width: 100% !important;
+  max-width: 100% !important;
+  height: auto !important;
+  display: block !important;
+}
+
+  
