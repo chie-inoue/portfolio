@@ -273,16 +273,16 @@ img {
   border: 1px solid #ddd;
 }
 
-.sp-mockup img {
+.sp-mockup {
   width: 220px;
-  display: block;
-  marigin: 0 auto;
-  border: 6px solid #333;
-  border-radius: 24px;
+  margin: 0 auto;
 }
 
-.sp-mockup {
-  flex-shrink: 0;
+.sp-mockup img {
+  width: 100%;
+  display: block;
+  border: 6px solid #333;
+  border-radius: 24px;
 }
 
 /*--------------------------------
