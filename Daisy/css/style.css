@@ -1,0 +1,589 @@
+@charset "utf-8";
+
+body {
+  font-family:
+    "Noto Sans JP",
+    "Helvetica Neue",
+    Arial,
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "BIZ UDPGothic",
+    Meiryo,
+    sans-serif;
+  background-color: #f5f3ef;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+header h1,
+nav.global a,
+footer h2 {
+  font-family: "Noto Serif JP", serif;
+}
+
+/* div.wrapper */
+.wrapper {
+  background-color: #f5f3ef;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+/* header */
+header {
+  background-color: #c9a333;
+  padding: 20px 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header h1 {
+  font-size: 42px;
+  font-weight: 900;
+  background-image: url(../images/logo_mark.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 44px 44px;
+  padding-left: 60px;
+  min-height: 48px;
+}
+
+header h1 a {
+  color: #004ca0;
+  text-decoration: none;
+}
+
+.global ul {
+  display: flex;
+}
+
+.global li a {
+  display: block;
+  color: #004ca0;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0 20px;
+  border-right: 1px solid #fff;
+}
+
+.global li:last-child a {
+  padding-right: 0;
+  border-right: 0;
+}
+
+.global li a:hover span.inner {
+  color: #004ca0;
+  border-bottom: 2px solid #004ca0;
+}
+
+.visual_img {
+  background-image: url(../images/visual_img_01.png);
+  background-size: cover;
+  height: 450px;
+}
+
+.index .visual_img {
+  height: 470px;
+  padding-bottom: 150px;
+  padding-right: 100px;
+}
+
+.visual_img p {
+  color: #fff;
+  font-size: 30px;
+  line-height: 32px;
+  text-shadow: 0 2px 10px rgba(0, 0, 0, 0.45);
+  padding-left: 80px;
+  padding-top: 250px;
+}
+
+.container {
+  margin: 0 40px;
+  display: flex;
+  justify-content: space-between;
+}
+
+/* 全体 */
+.about-blocks {
+  width: 100%;
+  padding-top: 48px;
+  padding-bottom: 40px;
+}
+
+/* 1段 */
+.block {
+  display: flex;
+  min-height: 300px;
+}
+
+/* 交互 */
+.block.reverse {
+  flex-direction: row-reverse;
+}
+
+/* 比率　40:60 */
+.block-image {
+  width: 45%;
+  position: relative;
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.block-text {
+  width: 55%;
+  padding: 48px;
+  background-color: #fff;
+}
+
+/* 画像は枠いっぱいに */
+.block-image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 画像の上（＝画像の直下）に置く見出し */
+.block-label {
+  position: absolute;
+  top: 45%;
+  left: 10%;
+  color: #fff;
+  font-size: 24px;
+  line-height: 32px;
+  letter-spacing: 0.08em;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+/* 本文 */
+.block-text p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #333;
+}
+
+/* 段の区切り線 */
+.block+.block {
+  border-top: 1px solid #eee;
+}
+
+
+main h2 {
+  color: #1f3a8a;
+  font-size: 22px;
+  font-weight: 500;
+  line-height: 30px;
+  margin-left: 50px;
+}
+
+dl.info {
+  background-color: #f9f9f9;
+  border: 1px solid #1f3a8a;
+  width: 800px;
+  height: 180px;
+  overflow-y: auto;
+  padding: 20px 20px;
+  margin: 0 auto;
+}
+
+dl.info div.news {
+  display: flex;
+  height: 24px;
+  padding: 10px 0;
+  margin: 0 auto;
+  border-bottom: 2px dotted #c9a333;
+}
+
+dl.info dt {
+  width: 9em;
+}
+
+.information {
+  padding: 32px 0;
+}
+
+footer {
+  background-color: #004ca0;
+  color: #fff;
+  padding: 20px 40px;
+}
+
+footer .content {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #fff;
+}
+
+footer h2 {
+  font-size: 26px;
+  line-height: 34px;
+  background-image: url(../images/logo_mark.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 32px 32px;
+  padding-left: 44px;
+  min-height: 38px;
+}
+
+address {
+  margin-left: 40px;
+  font-size: 14px;
+}
+
+address span.phone {
+  background-image: url(../images/free_dial.png);
+  background-repeat: no-repeat;
+  background-position: left center;
+  padding-left: 28px;
+}
+
+.local {
+  margin-top: 5px;
+}
+
+.local ul li {
+  display: inline-block;
+  margin-left: 30px;
+}
+
+.local ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding-bottom: 10px;
+}
+
+.local ul li a:hover {
+  border-bottom: 1px solid #fff;
+}
+
+small {
+  font-size: 16px;
+}
+
+div.box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* company共通 */
+
+.inner,
+.promise-wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
+/* 1stビュー */
+.company-first {
+  position: relative;
+  width: 1100px;
+  margin: 0 auto 40px;
+  text-align: center;
+}
+
+.company-first-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* 白レイヤー */
+.hero-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.6);
+}
+
+/* 文字を画像の上にのせる */
+.hero-text {
+  position: absolute;
+  top: 57%;
+  left: 0%;
+  width: 100%;
+}
+
+/* キャッチコピー */
+.catch {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+/* 説明文 */
+.lead {
+  font-size: 16px;
+  line-height: 1.8;
+}
+
+/* 2ndビュー */
+.company-second {
+  background-color: #f5f5f5;
+  padding: 64px 0;
+}
+
+.company-second .inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.philosophy-wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.philosophy-text {
+  max-width: 520px;
+}
+
+.philosophy-text h2 {
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
+.philosophy-text p {
+  font-size: 18px;
+  line-height: 2.1;
+  margin-bottom: 20px;
+}
+
+.philosophy-image {
+  margin-left: 48px;
+}
+
+.philosophy-image img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  display: block;
+}
+
+
+/* 3rdビュー */
+.company-third {
+  padding-bottom: 24px;
+  margin-bottom: 20px;
+}
+
+.company-third h2 {
+  text-align: center;
+  font-size: 32px;
+  padding-bottom: 40px;
+}
+
+.promise-wrap {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.promise {
+  width: 32%;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  padding-bottom: 24px;
+}
+
+.promise img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.promise h3 {
+  margin: 20px 20px 12px;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+.promise p {
+  margin: 0 20px 16px;
+  line-height: 1.9;
+  font-size: 16px;
+}
+
+
+/* hero */
+.contact-hero {
+  width: 100%;
+  height: 240px;
+  margin-bottom: 4px;
+}
+
+.contact-hero img {
+  width: 100%;
+  display: block;
+}
+
+/* 見出し */
+.contact h1 {
+  font-size: 28px;
+  margin: 0 0 16px;
+}
+
+/* 導入文 */
+.contact-lead,
+.contact-message,
+.contact-note {
+  max-width: 700px;
+  line-height: 1.9;
+  margin: 0 0 12px;
+}
+
+.contact-note {
+  font-size: 14px;
+  margin-bottom: 24px;
+  color: #666;
+}
+
+/* TELエリア */
+.tel-box {
+  max-width: 700px;
+  margin: 24px auto;
+  padding: 12px;
+}
+
+.tel-number {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.7;
+  margin: 0;
+  text-align: center;
+}
+
+/* フォーム */
+.form-box {
+  max-width: 700px;
+  margin: 0 auto 48px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  text-align: left;
+
+}
+
+.form-box h2 {
+  margin: 0 0 14px;
+  font-size: 18px;
+}
+
+/* 各入力行 */
+.form-item {
+  margin-bottom: 18px;
+}
+
+.form-item label {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 14px;
+}
+
+/* 入力欄 */
+
+.contact-form input {
+  width: 100%;
+  height: 36px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  background-color: #fff;
+}
+
+.contact-form textarea {
+  width: 100%;
+  height: 160px;
+  padding: 8px;
+  box-sizing: border-box;
+  border: 1px solid #bbb;
+  background-color: #fff;
+}
+
+/* 必須表記 */
+.contact .required {
+  font-size: 12px;
+  margin-left: 6px;
+  color: #004ca0
+}
+
+/* チェックBOX */
+.form-agree {
+  margin: 16px 0 24px;
+}
+
+.form-agree label {
+  display: inline-block;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.form-agree input {
+  width: 14px;
+  height: 14px;
+  margin-right: 6px;
+}
+
+/* 送信ボタン */
+.submit {
+  margin: 0;
+  text-align: center;
+}
+
+.submit button {
+  padding: 12px 28px;
+  border: none;
+  background-color: #004ca0;
+  color: #fff;
+  font-size: 14px;
+}
+
+/* 個人情報 */
+.privacy-box {
+  max-width: 700px;
+  padding: 16px 20px;
+  margin: 40px auto;
+  border: 1px solid #ddd;
+  background-color: #fff;
+}
+
+.privacy-box p {
+  margin: 0;
+  line-height: 1.8;
+  font-size: 14px;
+  color: #444;
+}
+
+.portfolio-back {
+  text-align: center;
+  margin: 80px 0 30px;
+}
+
+.portfolio-back a {
+  color: #333;
+  text-decoration: none;
+  border-bottom: 1px solid #333;
+  padding-bottom: 3px;
+  transition: .3s;
+}
+
+.portfolio-back a:hover {
+  opacity: .7;
+}
